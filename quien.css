@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fefefe;
+}
+body {
+    background-image: linear-gradient(to right,#040404, #030303)
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding:20px;
+}
+.pic{
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+}
+.card1{
+    background-color: #020202;
+    padding: 20px;
+    max-width: 300px;
+    margin: 2px 1px;
+}
+.card2{
+    padding: 20px;
+    background-color: #080808;
+    max-width: 500px;
+    margin: 2px 1px;
+}
+.h-green{
+    color: #fcfbf9;
+    text-transform:uppercase;
+    font-weight: 600;
+}
+.farm{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.carousel-indicators{
+bottom: -10px;
+left:initial;
+right: 0;
+margin: 0;
+}
+.carousel-indicators [data-bs-target]{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #ffd902;
+}
+.items{
+    font-size: 15px;
+    background-color: #080808;
+    margin: 7px 3px;
+    padding: 4px;
+}
+.carousel-indicators .active{
+    background-color: #000;
+}
+@media only screen and (max-width:767.5px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card1{
+        max-width: 400px;
+    }
+    .card2{
+        max-width: 400px;
+    }
+    .farm{
+        width: 150px;
+        height: 80px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card1{
+        max-width: 400px;
+    }
+    .farm{
+        width: 100px;
+        height: 80px;
+    }
+}
